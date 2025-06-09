@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "znicmod",
+	"version": "${version}",
+	"name": "ZnicMod",
+	"description": "我的学习模组",
+	"authors": [
+		"Anemone"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/znicmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.anemone.ZnicMod"
+		],
+		"fabric-datagen": [
+			"com.anemone.ZnicModDataGenerator"
+		],
+		"client": [
+			"com.anemone.ZnicModClient"
+		]
+	},
+	"mixins": [
+		"znicmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
